@@ -10,10 +10,8 @@
 #include "Arduino.h"
 #include "cd5220vfd.h"
 
-void vfd::print(int texto) {
-  int textoa;
-  textoa = (texto);
- Serial1.print(textoa); 
+void vfd::print(String texto) {
+ Serial1.print(texto); 
 } // This is only for like compatibility or something guataever.
 
 vfd::vfd()
