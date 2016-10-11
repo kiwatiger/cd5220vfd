@@ -14,6 +14,12 @@ void vfd::print(String texto) {
  Serial1.print(texto); 
 } // This is only for like compatibility or something guataever.
 
+void vfd::printchar(int textchar) {
+ int textchar1;
+ textchar1 = ("(char)", textchar);
+ Serial1.write(textchar1); 
+} // This is to write special characters, based on ascii codes.
+
 vfd::vfd()
 {
 Serial1.begin(9600);
