@@ -17,7 +17,7 @@ class vfd
 public:
 	vfd();
 	void ClearVFD();
-	void print(int texto);
+	void print(String texto);
 	void Cursor(int xs, int ys);
 	void CursorBlink(int curbk);
 	void SelfTest();
