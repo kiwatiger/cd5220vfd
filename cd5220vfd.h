@@ -18,6 +18,7 @@ public:
 	vfd();
 	void ClearVFD();
 	void print(String texto);
+	void printchar(int texchar);
 	void Cursor(int xs, int ys);
 	void CursorBlink(int curbk);
 	void SelfTest();
