@@ -8,10 +8,15 @@ void setup() {
 }
 
 void loop() {
+    vfd.ClearVFD();
     vfd.print("1234567890");
-    delay(400);
     vfd.Cursor(1, 2); //locate cursor on first character of the second line.
     vfd.print("0987654321");
-    
+    delay(1000);
+    vfd.ClearVFD();
+    vfd.print("0987654321");
+    vfd.Cursor(1, 2); //locate cursor on first character of the second line.
+    vfd.print("1234567890");
+    delay(1000);
 
 }
